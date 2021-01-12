@@ -7,94 +7,111 @@
 
     <title>Portfolio | Liyuan He</title>
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Use Font Awesome icons: envelope, linkedin, github -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/functions.js"></script>
+
 </head>
 
 <body>
-    <img src="images/logo.png" alt="logo">
+    <section class="container">
 
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="#case-study">CASE STUDY</a>
-            </li>
-            <li>
-                <a href="about.html">ABOUT</a>
-            </li>
-            <li>
-                <a href="resume.html">RESUME</a>
-            </li>
-        </ul>
-    </nav>
-
-    <p>
-        <strong>
-            Howdy! My name is Liyuan He and
-        </strong>
-        I am a UX UI Designer based in Houston, TX. <br>
-        I design with <i>utter emphathy</i>. <br>
-        If you want to offer me opportunities of contributing to the educational technology field, <a
-            href="mailto:woaihkx@gmail.com">contact me</a>.
-    </p>
-
-    <img src="images/sketch.png" alt="sketch" height="400">
-
-    <a href="about.html" class="button" target="_blank">More About Me</a>
-
-    <section id="case-study">
-
-        <section>
-            <img src="images/ConnectEd.png" alt="case-study1">
-            <h3>ConnectEd</h3>
-            <p> ConnectEd is a videoconferencing platform where you teach and learn a language with ease. </p>
-            <a href="case1connected.html" class="button" target="_blank">VIEW CASE STUDY</a>
-        </section>
-
-        <section>
-            <h3>FlexSpace</h3>
-            <p> A space that is only for you, to save, manage and collaborate with AUTONOMY. </p>
-            <a href="" class="button" target="_blank">COMING SOON</a>
-            <img src="images/flexspace.png" alt="case-study2">
-        </section>
-
-    </section>
-
-    <footer>
-        <h4>Wanna connect?</h4>
-
-        <!-- Social icons -->
-        <div class="socials">
-            <ul>
-                <li>
-                    <a href="contact.html">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.linkedin.com/in/liyuan-he-51651753/"></a>
-                        <i class="fa fa-linkedin-square"></i>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/woaihkx">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </li>
-            </ul>
+        <!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+        <div class="topnav" id="myTopnav">
+            <a href="#"> <img src="images/logo.png"> </a>
+            <!--
+            <a href="#"> HOME </a>
+            -->
+            <a href="#case-study">CASE STUDY</a>
+            <a href="about.html" target="_blank">ABOUT</a>
+            <a href="resume.html" target="_blank">RESUME</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 
+        <section class="row">
+            <section id="intro">
+                <p>
+                    <strong>
+                        Howdy! My name is Liyuan He and
+                    </strong>
+                    <br>
+                    I am a UX UI Designer based in Houston, TX. <br>
+                    I design with <i>utter emphathy</i>. <br>
+                    If you want to offer me opportunities of contributing to the educational technology field, <a
+                        href="mailto:woaihkx@gmail.com">contact me</a>.
+                </p>
 
-        <!-- Copyright -->
-        <p class="copyright">&copy; 2020 Liyuan He | Designed and Developed by Liyuan </p>
+                <a href="about.html" class="button" target="_blank">More About Me</a>
+            </section>
 
-    </footer>
+            <section id="sketch">
+                <img src="images/sketch.png" alt="sketch" height="400px">
+            </section>
 
+        </section>
 
+        <section class="case-study" id="case-study">
+
+            <section class="row">
+                <section class="column">
+                    <img src="images/ConnectEd.png" alt="case-study1">
+                </section>
+                <section class="column">
+                    <h3 class="title">ConnectEd</h3>
+                    <p class="content"> ConnectEd is a videoconferencing platform where you teach and learn a language
+                        with ease. </p>
+                    <a href="case1connected.html" class="button" target="_blank">VIEW CASE STUDY</a>
+                </section>
+            </section>
+
+            <section class="row">
+                <section class="column">
+                    <h3>FlexSpace</h3>
+                    <p> A space that is only for you, to save, manage and collaborate with AUTONOMY. </p>
+                    <a href="" class="button" target="_blank">COMING SOON</a>
+                </section>
+                <section class="column">
+                    <img src="images/flexspace.png" alt="case-study2">
+                </section>
+            </section>
+
+        </section>
+
+        <footer class="footer">
+            <h4>Wanna connect?</h4>
+
+            <!-- Social icons -->
+            <div class="socials">
+                <ul>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/liyuan-he-51651753/"></a>
+                        <i class="fa fa-linkedin-square"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/woaihkx">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Copyright -->
+            <p class="copyright">&copy; 2020 Liyuan He | Designed and Developed by Liyuan </p>
+
+        </footer>
+
+    </section>
 </body>
 
 </html>
