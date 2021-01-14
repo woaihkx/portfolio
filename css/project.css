@@ -1,0 +1,581 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ---- Top navigation bar ---- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.topnav img {
+  height: 24px;
+  width: auto;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    font-size: 20px;
+  }
+  .topnav a:first-child {
+    margin-left: 35%;
+    margin-right: 35%;
+    display: inline-block;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* ---- Home page ---- */
+
+#homeRow {
+  background-color: #f5f5f5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#homeRow h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: #2e9189;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#homeRow h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 145%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*
+#ConnectEd .oneRow {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px 0;
+  background-color: #e1e1de;
+}
+*/
+
+#ConnectEd .threeColumn {
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.threeColumn {
+  float: left;
+  width: 28%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#ConnectEd .threeColumn h3 {
+  margin-top: 0;
+}
+
+#ConnectEd .threeColumn h5 {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+#deliverables, #AliceWang {
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .threeColumn,
+  #intro,
+  #sketch {
+    width: 100%;
+    float: none;
+  }
+
+  #sketch img {
+    transform: rotate(90deg);
+    float: left;
+  }
+
+  #deliverables, #AliceWang {
+    border: none;
+  }
+}
+
+/* ---- Overview page ---- */
+
+.oneRow {
+  background-color: #f5f5f5;
+  padding: 4%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.oneColumnImage {
+  float: left;
+  width: 30%;
+}
+
+.oneColumnText {
+  float: right;
+  width: 65%;
+}
+
+.oneColumnImage img {
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.oneRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .oneColumnImage {
+    width: 100%;
+    float: none;
+  }
+  .oneColumnText {
+    width: 100%;
+    float: none;
+  }
+}
+
+.chapterHead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  background-color: #e1e1de;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*
+@media (max-width: 600px) {
+  .chapterHead {
+    display: none;
+  }
+}
+*/
+
+.smallHead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bigHead {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* ---- Discovery page ---- */
+
+.keyDiscoveries {
+  margin: 4% 10%;
+}
+
+#Discovery li {
+  text-align: left;
+  margin-top: 10px;
+}
+
+#Discovery q {
+  font-style: italic;
+}
+
+#surveyResults {
+  margin: 4% 0;
+}
+
+.threeColumn img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.twoColumn {
+  float: left;
+  width: 48%;
+  margin-top: 5%;
+}
+
+.twoColumn ol {
+  width: 80%;
+}
+
+#googleColumn {
+  border-left: 1px black solid;
+}
+
+.twoColumn img {
+  height: 50px;
+  width: auto;
+}
+
+.twoColumn h3 {
+  text-align: left;
+  padding-left: 5%;
+  color: #c3503e;
+}
+
+@media (max-width: 600px) {
+  .twoColumn {
+    width: 100%;
+    float: none;
+  }
+
+  #googleColumn {
+    border-left: none;
+  }
+}
+
+/* ---- Brand page ---- */
+
+.initialConcept {
+  text-align: left;
+  padding-left: 25%;
+}
+
+@media (max-width: 600px) {
+  .initialConcept {
+    padding-left: 10%;
+  }
+}
+
+#Brand .oneColumnImage {
+  float: right;
+  width: 30%;
+}
+
+#Brand .oneColumnText {
+  float: left;
+  width: 70%;
+  text-align: left;
+}
+
+.logoConcept {
+  padding-left: 10%;
+}
+
+#treeLogo {
+  width: 50%;
+}
+
+@media (max-width: 600px) {
+  #Brand .oneColumnImage {
+    width: 80%;
+    float: none;
+    margin: auto;
+  }
+  #Brand .oneColumnText {
+    width: 100%;
+    float: none;
+  }
+}
+
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.cbox-with-label .cbox-c1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #daeded;
+}
+
+.cbox-with-label .cbox-c2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #64c2b9;
+}
+
+.cbox-with-label .cbox-c3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #2e9189;
+}
+
+.cbox-with-label .cbox-c4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #1a3c3e;
+}
+
+.cbox-with-label h6 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+.cbox-with-label {
+  display: inline;
+  margin-right: 30px;
+  float: left;
+}
+
+#cboxes {
+  width: 100%;
+  overflow: auto;
+}
+
+#colors {
+  background-color: white;
+  padding: 1%;
+}
+
+#quickSand {
+  background-color: #DAEDED;
+  padding: 1%;
+}
+
+#quickSand h4 {
+  text-align: left;
+}
+
+#Brand .oneRow {
+  margin: 20px;
+}
+
+/* ---- Information page ---- */
+
+#paper {
+  width: 70%;
+}
+
+#Information .oneColumnImage {
+  float: left;
+  width: 60%;
+}
+
+#Information .oneColumnText {
+  float: right;
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  #Information .oneColumnImage {
+    width: 80%;
+    float: none;
+    margin: auto;
+  }
+  #Information .oneColumnText {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* ---- Visual page ---- */
+
+#Visual img {
+  width: 80%;
+}
+
+
+#Visual .twoColumn {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+}
+
+#Visual .twoColumn img {
+  width: 90%;
+  height: auto;
+}
+
+/* Force following paragraph start at left */
+#cbar2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  #Visual .twoColumn {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+}
+
+
+/* ---- Footer ---- */
+
+.footer {
+  background: url(../images/footerbkgd.png);
+  text-align: center;
+}
+
+.footer h4 {
+  margin: 0;
+  padding: 10px;
+  color: yellow;
+}
+
+.footer p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+.footer .socials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .socials li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fa.fa-envelope {
+  color: white;
+}
+
+.fa.fa-linkedin-square {
+  color: white;
+}
+
+.fa.fa-github {
+  color: white;
+}
+
+/* ---- Social icons ---- */
+
+.fa.fa-envelope {
+  font-size: 24px;
+}
+
+.fa.fa-linkedin-square {
+  font-size: 24px;
+}
+
+.fa.fa-github {
+  font-size: 24px;
+}
