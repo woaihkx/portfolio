@@ -1,9 +1,16 @@
+projects*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #242227;
-  color: white;
+  color: #FEFEFF;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 10px;
+  font-weight:400;
   margin: 0;
-  padding: 0;
   overflow: auto;
+  padding: 0;
 }
 
 .container {
@@ -13,24 +20,45 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  margin: 0 auto;
+  background-color: #242227;
+  font-weight: 700;
+  font-size: 3em;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+  float: right;
+  display: inline-block;
+  color: #FEFEFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 10px 30px 10px;
+  margin-right: 30px;
   text-decoration: none;
-  font-size: 17px;
-  height: 24px;
+  font-size: 18px;
+  vertical-align: middle;
+  letter-spacing: 1.2px;
 }
 
 .topnav img {
-  height: 24px;
+  height: 36px;
+  display: inline-block;
+  width: auto;
+  margin: 0;
+  position: relative;
+  top: 22px;
+  padding-left: 3%;
+}
+
+#myLogo {
+  display: inline;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+#myLogo img {
+  vertical-align: bottom;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -40,8 +68,8 @@ body {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
-  background-color: #555;
-  color: white;
+  background-color: #C3503E;
+  color: #FEFEFF;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -57,6 +85,20 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
+    padding-right: 40px;
+  }
+  .topnav a {
+    padding: 20px 20px;
+    margin-right: 0;
+  }
+  .topnav img {
+    height: 24px;
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    padding-left: 43%;
   }
 }
 
@@ -79,44 +121,96 @@ body {
 
 #intro {
   float: left;
+  margin-left: 10%;
+  margin-top: 60px;
   width: 60%;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+#intro #home {
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+}
+
+#intro a {
+  color: #FEFEFF;
+  letter-spacing: 2px;
 }
 
 #sketch {
   float: left;
-  width: 40%;
+  width: 30%;
 }
 
-#sketch img {
+#sketch1 {
   float: right;
+  height: 500px;
 }
 
-#intro p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
+#sketch2 {
+  display: none;
 }
+
 
 .projects .row {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin: 20px;
-  background-color: gray;
+  margin: 50px 80px 50px 80px;
+  background-color: #575964;
+  border-radius: 5px;
+}
+
+.title1 {
+  font-size: 4em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #2E9189;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.title2 {
+  font-family: 'Avenir', sans-serif;
+  src: url('fonts/AvenirLTStd-Black.eot'),
+       url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AvenirLTStd-Black.woff2') format('woff2'),
+       url('fonts/AvenirLTStd-Black.woff') format('woff'),
+       url('fonts/AvenirLTStd-Black.ttf') format('truetype'),
+       url('fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
+  font-weight: 700;
+  font-size: 4em;
+  color: #3096F3;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+.content {
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  padding-bottom: 30px;
 }
 
 .projects .column {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 50%;
+  width: 45%;
+  height: 100%;
+  margin-left: 20px;
 }
 
 .column img {
   width: 80%;
+  vertical-align: middle;
 }
 
 /* Clear floats after the columns */
@@ -126,35 +220,48 @@ body {
   clear: both;
 }
 
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column, #intro, #sketch {
-    width: 100%;
-    float: none;
-  }
-
-  #sketch img {
-    transform: rotate(90deg);
-    float: left;
-  }
-}
-
 a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
+  background-color: #242227;
+  border: 3px solid #FEFEFF;
+  color: #FEFEFF;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 0 200px 0;
   cursor: pointer;
+}
+
+#viewProject1 {
+  background-color: #2E9189;
+  border: none;
+  color: #FEFEFF;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+
+#viewProject2 {
+  background-color: #3096F3;
+  border: none;
+  color: #FEFEFF;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
 }
 
 .cbox-with-label .cbox-c1 {
@@ -187,19 +294,26 @@ a.button {
 
 /* ---- Footer ---- */
 
-.footer { 
-  background: url(../images/footerbkgd.png); 
-  text-align: center; 
+.footer {
+  background: url(../images/footerbkgd.png);
+  text-align: center;
+  margin-top: 100px;
 }
 
 .footer h4 {
   margin: 0;
-  padding: 10px;
+  padding: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #F5DB62;
 }
 
 .footer p {
   margin: 0;
   padding: 10px;
+  padding: 50px;
+  font-size: 2em;
 }
 
 .footer .socials ul {
@@ -210,8 +324,8 @@ a.button {
 
 .footer .socials li {
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .fa.fa-envelope {
@@ -230,13 +344,69 @@ a.button {
 /* ---- Social icons ---- */
 
 .fa.fa-envelope {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .fa.fa-linkedin-square {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .fa.fa-github {
-  font-size: 24px;
+  font-size: 36px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column, #intro {
+    width: 100%;
+    float: none;
+  }
+  #sketch {
+    background-image: url(images/sketch2.png);
+    width:70%;
+  }
+  .projects .row {
+    margin: 30px 0 30px 0;
+    border-radius: 0;
+  }
+  .projects #case {
+    padding-top: 15px;
+  }
+  #intro #home {
+    font-size: 1.3em;
+  }
+  #intro {
+    margin: 50px 0 0 0;
+    font-size: 1.8em;
+    line-height: 1.6em;
+    padding: 0 18px 0 18px;
+    letter-spacing: 1px;
+  }
+  .title1 .title2 {
+    font-size: 2.6em;
+  }
+  .content {
+    font-size: 2em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #viewProject1 #viewProject2 {
+    font-size: 1.8em;
+  }
+  .column {
+    margin: 0px;
+  }
+  #intro .button {
+    margin: 40px 0 30px 0;
+  }
+  .footer h4 {
+    font-size: 2.4em;
+    color: #F5DB62;
+    padding: 36px;
+  }
+  .footer p {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    padding: 36px;
+  }
 }

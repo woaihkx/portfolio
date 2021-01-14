@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio | Liyuan He</title>
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Use Font Awesome icons: envelope, linkedin, github -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Quicksand:wght@700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap">
 
     <script src="js/functions.js"></script>
 
@@ -21,35 +23,37 @@
 
         <!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
         <header class="topnav" id="myTopnav">
-            <a href="#"> <img src="images/logo.png"> </a>
+            <div id="myLogo">
+               <img src="images/logo.png">
+            </div>
             <!--
             <a href="#"> HOME </a>
             -->
-            <a href="#projects">PROJECTS</a>
-            <a href="about.html" target="_blank">ABOUT</a>
-            <a href="resume.html" target="_blank">RESUME</a>
+
+            <a href="resume.html" id="label" target="_blank">RESUME</a>
+            <a href="about.html" id="label">ABOUT</a>
+            <a href="#projects" id="label">PROJECTS</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </header>
 
         <section class="row">
             <section id="intro">
+              <p id="home">
+                  Howdy! My name is <br> Liyuan He and
+              </p>
                 <p>
-                    <strong>
-                        Howdy! My name is Liyuan He and
-                    </strong>
-                    <br>
-                    I am a UX UI Designer based in Houston, TX. <br>
-                    I design with <i>utter emphathy</i>. <br>
-                    If you want to offer me opportunities of contributing to the educational technology field, <a
+                    I am a UX UI Designer based in Houston. <br>
+                    I design with <span style="color:#F5DB62; font-style: italic;">utter emphathy</span>.<br>
+                    If you want to offer me opportunities of <br> contributing to the educational technology field, <br> <a
                         href="mailto:woaihkx@gmail.com">contact me</a>.
                 </p>
 
                 <a href="about.html" class="button" target="_blank">More About Me</a>
             </section>
 
-            <section id="sketch">
-                <img src="images/sketch.png" alt="sketch" height="400px">
-            </section>
+
+                <img src="images/sketch.png" alt="sketch" id="sketch1">
+                <img src="images/sketch2.png" alt="sketch" id="sketch2">
 
         </section>
 
@@ -59,22 +63,22 @@
                 <section class="column">
                     <img src="images/ConnectEd.png" alt="project1">
                 </section>
-                <section class="column">
-                    <h3 class="title">ConnectEd</h3>
+                <section class="column" id="case">
+                    <h3 class="title1">ConnectEd</h3>
                     <p class="content"> ConnectEd is a videoconferencing platform where you teach and learn a language
                         with ease. </p>
-                    <a href="project1.html" class="button" target="_blank">VIEW PROJECT</a>
+                    <a href="project1.html" id="viewProject1" target="_blank">VIEW CASE STUDY</a>
                 </section>
             </section>
 
             <section class="row">
                 <section class="column">
-                    <h3>FlexSpace</h3>
-                    <p> A space that is only for you, to save, manage and collaborate with AUTONOMY. </p>
-                    <a href="" class="button" target="_blank">COMING SOON</a>
+                  <img src="images/flexspace.png" alt="project2">
                 </section>
-                <section class="column">
-                    <img src="images/flexspace.png" alt="project2">
+                <section class="column" id="case">
+                    <h3 class="title2">FlexSpace</h3>
+                    <p class="content"> A space that is only for you, to save, manage and collaborate with autonomy. </p>
+                    <a href="" id="viewProject2" target="_blank">COMING SOON</a>
                 </section>
             </section>
 
