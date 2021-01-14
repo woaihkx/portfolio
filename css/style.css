@@ -410,3 +410,69 @@ a.button {
     padding: 36px;
   }
 }
+
+
+/* ---- about html ---- */
+
+/* Create two equal columns that floats next to each other */
+.aboutColumn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.aboutColumn img {
+  width: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 15%;
+}
+
+/* Clear floats after the columns */
+.aboutRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .aboutColumn {
+    width: 100%;
+    float: none;
+  }
+}
+
+.aboutColumn p {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.aboutRow, .aboutIntro {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutIntro {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.aboutIntro h3 {
+  color: yellow;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.aboutIntro p {
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.aboutIntro a {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
