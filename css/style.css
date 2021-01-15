@@ -1,4 +1,4 @@
-projects*, *:before, *:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   vertical-align: middle;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
 }
 
 .topnav img {
@@ -68,7 +68,7 @@ body {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
-  background-color: #C3503E;
+  background-color: none;
   color: #FEFEFF;
 }
 
@@ -85,11 +85,11 @@ body {
   .topnav a.icon {
     float: right;
     display: block;
-    padding-right: 40px;
+    margin-right: 20px;
   }
   .topnav a {
     padding: 20px 20px;
-    margin-right: 0;
+    margin: 0;
   }
   .topnav img {
     height: 24px;
@@ -98,7 +98,7 @@ body {
     margin: 0;
     position: relative;
     top: 10px;
-    padding-left: 43%;
+    padding-left: 3%;
   }
 }
 
@@ -115,14 +115,14 @@ body {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: -webkit-right;
   }
 }
 
 #intro {
   float: left;
   margin-left: 10%;
-  margin-top: 60px;
+  margin-top: 80px;
   width: 60%;
   font-size: 2.4em;
   line-height: 1.5em;
@@ -142,20 +142,32 @@ body {
   letter-spacing: 2px;
 }
 
-#sketch {
-  float: left;
-  width: 30%;
-}
-
 #sketch1 {
   float: right;
   height: 500px;
+  margin-right: 50px;
+  margin-top: 50px;
 }
 
-#sketch2 {
-  display: none;
+@media (max-width: 1038px) {
+  #sketch1 {
+    float: left;
+    height: 350px;
+  }
+  #intro .button {
+    margin: 40px 0 50px 0;
+  }
 }
 
+@media (max-width: 782px) {
+  #sketch1 {
+    float: left;
+    height: 250px;
+  }
+  #intro .button {
+    margin: 40px 0 50px 0;
+  }
+}
 
 .projects .row {
   margin: 50px 80px 50px 80px;
@@ -357,13 +369,15 @@ a.button {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
+  #sketch1 {
+    float: left;
+    transform: rotate(90deg);
+    height: 500px;
+    margin: 0;
+  }
   .column, #intro {
     width: 100%;
     float: none;
-  }
-  #sketch {
-    background-image: url(images/sketch2.png);
-    width:70%;
   }
   .projects .row {
     margin: 30px 0 30px 0;
@@ -379,8 +393,11 @@ a.button {
     margin: 50px 0 0 0;
     font-size: 1.8em;
     line-height: 1.6em;
-    padding: 0 18px 0 18px;
+    padding: 0 20px 0 20px;
     letter-spacing: 1px;
+  }
+  #intro .button {
+    margin: 40px 0 0 0;
   }
   .title1 .title2 {
     font-size: 2.6em;
@@ -396,8 +413,8 @@ a.button {
   .column {
     margin: 0px;
   }
-  #intro .button {
-    margin: 40px 0 30px 0;
+  .footer {
+    margin-top: 50px;;
   }
   .footer h4 {
     font-size: 2.4em;
@@ -409,8 +426,20 @@ a.button {
     line-height: 1.3em;
     padding: 36px;
   }
+  .fa.fa-envelope {
+    font-size: 24px;
+  }
+  .fa.fa-linkedin-square {
+    font-size: 24px;
+  }
+  .fa.fa-github {
+    font-size: 24px;
+  }
+  .footer .socials li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-
 
 /* ---- about html ---- */
 
@@ -427,6 +456,8 @@ a.button {
   border-radius: 50%;
   vertical-align: middle;
   margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 20px;
 }
 
 /* Clear floats after the columns */
@@ -441,11 +472,19 @@ a.button {
     width: 100%;
     float: none;
   }
+  .aboutRow .aboutColumn p {
+    font-size: 3.6em;
+    margin-top: 15%;
+  }
 }
 
 .aboutColumn p {
-  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  font-size: 6em;
   font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 28%;
+  line-height: 1.2em;
 }
 
 .aboutRow, .aboutIntro {
@@ -459,20 +498,24 @@ a.button {
 }
 
 .aboutIntro h3 {
-  color: yellow;
-  font-size: 30px;
+  color: #F5DB62;
+  font-size: 3em;
   font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
   margin-bottom: 20px;
 }
 
 .aboutIntro p {
-  font-size: 20px;
+  font-size: 2em;
   font-weight: 200;
   margin-bottom: 20px;
   line-height: 1.5em;
 }
 
 .aboutIntro a {
-  margin-top: 20px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  margin-top: 30px;
   margin-bottom: 0px;
 }
