@@ -100,7 +100,18 @@ ul {
 }
 
 /* When the screen is less than 670 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .topnav .navtext, .icon {
+    font-size: 15px;
+    margin-right: 17px;
+  }
+  .topnav .navtext2 {
+    font-size: 14px;
+    margin-left: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .topnav .navtext {
     display: none;
   }
@@ -178,6 +189,8 @@ ul {
   font-size: 24px;
   line-height: 1.5em;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 a.button {
@@ -265,15 +278,9 @@ a.button {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  .threeColumn,
-  #intro,
-  #sketch {
+  .threeColumn {
     width: 100%;
     float: none;
-  }
-  #sketch img {
-    transform: rotate(90deg);
-    float: left;
   }
   #deliverables, #AliceWang, #quickSand {
     border: none;
@@ -301,27 +308,8 @@ a.button {
 
 .oneColumnImage img {
   width: 100%;
-  vertical-align: middle;
 }
 
-/* Clear floats after the columns */
-.oneRow:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media (max-width: 600px) {
-  .oneColumnImage {
-    width: 60%;
-    float: none;
-    margin: 30px 70px;
-  }
-  .oneColumnText {
-    width: 100%;
-    float: none;
-  }
-}
 
 .chapterHead {
   font-weight: 700;
@@ -368,6 +356,29 @@ a.button {
   margin-bottom: 15px;
 }
 
+/* Clear floats after the columns */
+.oneRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  #Overview .oneColumnImage {
+    width: 60%;
+    float: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+  }
+  #Overview .oneColumnText {
+    width: 100%;
+    float: none;
+  }
+  .bigHead {
+    line-height: 1.3em;
+}
+
 @media (max-width: 600px) {
   .chapterHead {
     font-size: 30px;
@@ -381,7 +392,6 @@ a.button {
     font-weight: 500;
     font-size: 24px;
     letter-spacing: 0;
-    line-height: 1.3em;
     margin-top: 10px;
     margin-bottom: 20px;
   }
@@ -534,18 +544,21 @@ a.button {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .twoColumn img {
+    height: 30px;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 600px) {
   .twoColumn {
     width: 100%;
     float: none;
     padding-left: 5%;
     padding-right: 5%;
-  }
-  .twoColumn img {
-    height: 30px;
-    width: auto;
-    margin-top: 30px;
-    margin-bottom: 10px;
   }
   .twoColumn ol {
     width: 100%;
@@ -554,7 +567,7 @@ a.button {
     border-left: none;
   }
   #googleColumn img{
-    height: 50px;
+    height: 40px;
   }
 }
 
@@ -567,6 +580,11 @@ a.button {
   text-align: left;
   padding-left: 25%;
 }
+
+@media screen and (max-width: 768px) {
+  .initialConcept {
+    padding-left: 15%;
+  }
 
 @media (max-width: 600px) {
   .initialConcept {
@@ -599,16 +617,18 @@ a.button {
   margin-top: 5%;
 }
 
+@media screen and (max-width: 768px) {
+  .initialConcept {
+    padding-left: 15%;
+  }
+}
+
 @media (max-width: 600px) {
   #Brand .oneColumnImage {
     width: 50%;
     float: none;
     margin-top: 30px;
     margin-bottom: 0;
-  }
-  #Brand .oneColumnText {
-    width: 100%;
-    float: none;
   }
   .logoConcept {
     margin-top: 1%;
@@ -618,7 +638,7 @@ a.button {
     font-size: 1.8em;
     line-height: 1.3em;
     font-weight: 300;
-    float: middle;
+    float: none;
     width: 100%;
   }
   #treeLogo {
@@ -816,7 +836,7 @@ a.button {
 .footer {
   background: url(../images/footerbkgd.png);
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .footer h4 {
@@ -876,9 +896,6 @@ a.button {
 }
 
 @media (max-width: 600px) {
-  .footer {
-  margin-top: 50px;;
-  }
   .footer h4 {
     font-size: 2.4em;
     color: #F5DB62;
