@@ -1,10 +1,16 @@
-body {
-  background-color: white;
-  color: black;
-  margin: 0;
-  padding: 0;
-  overflow: auto;
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #FEFEFF;
+  color: #242227;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 10px;
+  font-weight:400;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
   text-align: center;
 }
 
@@ -20,8 +26,6 @@ img {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 
@@ -29,24 +33,59 @@ ul {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  margin: 0 auto;
+  background-color: #242227;
+  font-weight: 700;
+  font-size: 3em;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+.topnav .navtext, .icon {
+  float: right;
+  display: inline-block;
+  color: #FEFEFF;
   text-align: center;
-  padding: 14px 8px;
+  padding: 30px 0 30px 0;
+  margin-right: 30px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 18px;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+.topnav .navtext2 {
+  float: left;
+  display: inline-block;
+  color: #FEFEFF;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: 300;
 }
 
 .topnav img {
-  height: 24px;
+  height: 36px;
+  float: left;
+  display: inline-block;
   width: auto;
+  margin: 0;
+  position: relative;
+  top: 20px;
+  padding-left: 3%;
+}
+
+#myLogo {
+  display: inline;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+#myLogo img {
+  vertical-align: bottom;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -56,31 +95,44 @@ ul {
 
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
-  background-color: #555;
-  color: white;
+  background-color: none;
+  color: #C3503E;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    font-size: 20px;
+/* When the screen is less than 670 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav .navtext {
+    display: none;
   }
-  .topnav a:first-child {
-    margin-left: 35%;
-    margin-right: 35%;
-    display: inline-block;
-  }
-  .topnav a:not(:first-child) {
+  .topnav .navtext2 {
     display: none;
   }
   .topnav a.icon {
     float: right;
     display: block;
+    margin-right: 20px;
   }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+  .topnav .icon {
+    padding: 20px 20px;
+    margin: 0;
+  }
+  .topnav .navtext {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+  }
+  .topnav .navtext2 {
+    padding: 20px 20px 0 20px;
+    margin: 0;
+  }
+  .topnav img {
+    height: 24px;
+    position: relative;
+    top: 17px;
+    margin-left: 3%;
+  }
   .topnav.responsive {
     position: relative;
   }
@@ -92,7 +144,13 @@ ul {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: -webkit-right;
+  }
+  .topnav.responsive img {
+    height: 24px;
+    position: relative;
+    top: -13px;
+    margin-left: 3%;
   }
 }
 
@@ -100,64 +158,104 @@ ul {
 
 #homeRow {
   background-color: #f5f5f5;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 #homeRow h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 150%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 5em;
   letter-spacing: 0.05em;
   color: #2e9189;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 #homeRow h6 {
-  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 145%;
+  line-height: 1.5em;
   text-align: center;
-  letter-spacing: 0.05em;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
-/*
+a.button {
+  background-color: #2E9189;
+  border: none;
+  color: #FEFEFF;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  #homeRow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #homeRow h3 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #homeRow h6 {
+    font-size: 18px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  a.button {
+    margin-top: 40px;
+    font-size: 1.6em;
+    padding: 12px 24px;
+
+  }
+}
+
 #ConnectEd .oneRow {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 10px 0;
   background-color: #e1e1de;
 }
-*/
 
 #ConnectEd .threeColumn {
   text-align: center;
-  margin-top: 33px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Create three equal columns that floats next to each other */
 .threeColumn {
   float: left;
-  width: 28%;
+  width: 33%;
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 1.8em;
+  line-height: 1.5em;
 }
 
 #ConnectEd .threeColumn h3 {
   margin-top: 0;
+  font-size: 24px;
+  color: #C3503E;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
 #ConnectEd .threeColumn h5 {
-  margin-top: 12px;
-  margin-bottom: 4px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 #deliverables, #AliceWang {
@@ -173,13 +271,11 @@ ul {
     width: 100%;
     float: none;
   }
-
   #sketch img {
     transform: rotate(90deg);
     float: left;
   }
-
-  #deliverables, #AliceWang {
+  #deliverables, #AliceWang, #quickSand {
     border: none;
   }
 }
@@ -205,6 +301,7 @@ ul {
 
 .oneColumnImage img {
   width: 100%;
+  vertical-align: middle;
 }
 
 /* Clear floats after the columns */
@@ -216,8 +313,9 @@ ul {
 
 @media (max-width: 600px) {
   .oneColumnImage {
-    width: 100%;
+    width: 60%;
     float: none;
+    margin: 30px 70px;
   }
   .oneColumnText {
     width: 100%;
@@ -226,9 +324,7 @@ ul {
 }
 
 .chapterHead {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   text-align: center;
   letter-spacing: 0.05em;
@@ -239,42 +335,64 @@ ul {
   margin-bottom: 10px;
 }
 
-/*
-@media (max-width: 600px) {
-  .chapterHead {
-    display: none;
-  }
-}
-*/
-
 .smallHead {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 26px;
   text-align: center;
-  letter-spacing: 0.05em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .bigHead {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   font-size: 30px;
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 1.8em;
+  line-height: 1.5em;
+  font-weight: 300;
   text-align: center;
+}
+
+.text1 {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .chapterHead {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .smallHead {
+    font-size: 22px;
+  }
+  .bigHead {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .text {
+    font-size: 1.6em;
+    line-height: 1.3em;
+  }
+  .text1 {
+    font-size: 1.6em;
+    line-height: 1.3em;
+  }
 }
 
 /* ---- Discovery page ---- */
@@ -285,30 +403,118 @@ ul {
 
 #Discovery li {
   text-align: left;
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.3em;
 }
 
-#Discovery q {
-  font-style: italic;
+#Discovery h6 {
+  font-size: 2.4em;
+  margin-bottom: 25px;
+}
+
+#Discovery .button {
+  margin-bottom: 20px;
 }
 
 #surveyResults {
   margin: 4% 0;
+  font-size: 2.4em;
+  font-weight: 400;
+  color: #C3503E;
+  line-height: 1.3em;
 }
 
-.threeColumn img {
+#Discovery .threeColumn {
+  margin-top: 6%;
+  padding-left: 40px;
+}
+
+#Discovery .threeColumn img {
   width: 50%;
   border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#Discovery .oneRow h4 {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+#Discovery .threeColumn p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin-top: 10px;
+}
+
+#Discovery .threeColumn h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+#Discovery .oneRow li {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  line-height: 1.2em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#Discovery .oneRow blockquote {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  font-style: italic;
+  line-height: 1.3em;
+}
+
+@media (max-width: 600px) {
+  #Discovery h6 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+  .keyDiscoveries {
+    margin: 4% 6%;
+  }
+  #surveyResults {
+    margin: 5% 0;
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  #Discovery .threeColumn {
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #Discovery .oneRow h4 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  #Discovery .threeColumn h5 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  #Discovery .oneRow blockquote {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .twoColumn {
   float: left;
   width: 48%;
   margin-top: 5%;
+  padding-left: 60px;
 }
 
 .twoColumn ol {
-  width: 80%;
+  width: 90%;
 }
 
 #googleColumn {
@@ -318,172 +524,226 @@ ul {
 .twoColumn img {
   height: 50px;
   width: auto;
+  margin-bottom: 30px;
 }
 
 .twoColumn h3 {
+  font-size: 2.6em;
+  color: #C3503E;
   text-align: left;
-  padding-left: 5%;
-  color: #c3503e;
+  margin-top: 30px;
 }
 
 @media (max-width: 600px) {
   .twoColumn {
     width: 100%;
     float: none;
+    padding-left: 5%;
+    padding-right: 5%;
   }
-
+  .twoColumn img {
+    height: 30px;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .twoColumn ol {
+    width: 100%;
+  }
   #googleColumn {
     border-left: none;
+  }
+  #googleColumn img{
+    height: 50px;
   }
 }
 
 /* ---- Brand page ---- */
 
 .initialConcept {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 300;
   text-align: left;
   padding-left: 25%;
 }
 
 @media (max-width: 600px) {
   .initialConcept {
-    padding-left: 10%;
+    padding-left: 8%;
+    font-size: 1.8em;
   }
 }
 
 #Brand .oneColumnImage {
   float: right;
-  width: 30%;
+  width: 20%;
 }
 
 #Brand .oneColumnText {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 300;
   float: left;
   width: 70%;
   text-align: left;
 }
 
 .logoConcept {
+  margin-top: 1%;
   padding-left: 10%;
 }
 
 #treeLogo {
-  width: 50%;
+  width: 40%;
+  margin-top: 5%;
 }
 
 @media (max-width: 600px) {
   #Brand .oneColumnImage {
-    width: 80%;
+    width: 50%;
     float: none;
-    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
   #Brand .oneColumnText {
     width: 100%;
     float: none;
   }
+  .logoConcept {
+    margin-top: 1%;
+    padding-left: 5%;
+  }
+  #Brand .oneColumnText {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    font-weight: 300;
+    float: middle;
+    width: 100%;
+  }
+  #treeLogo {
+    width: 60%;
+  }
 }
 
-
-a.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-.cbox-with-label .cbox-c1 {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  background: #daeded;
-}
-
-.cbox-with-label .cbox-c2 {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  background: #64c2b9;
-}
-
-.cbox-with-label .cbox-c3 {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  background: #2e9189;
-}
-
-.cbox-with-label .cbox-c4 {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  background: #1a3c3e;
-}
-
-.cbox-with-label h6 {
-  text-align: center;
-  font-size: 20px;
+#Brand .twoColumn {
   margin: 0;
 }
 
-.cbox-with-label {
-  display: inline;
-  margin-right: 30px;
-  float: left;
-}
-
-#cboxes {
-  width: 100%;
-  overflow: auto;
-}
-
 #colors {
-  background-color: white;
-  padding: 1%;
+  padding: 5%;
 }
 
 #quickSand {
-  background-color: #DAEDED;
-  padding: 1%;
+  padding: 5%;
+  border-left: 1px black solid;
+}
+
+#colors h4 {
+  font-size: 2.4em;
+}
+
+#colors p {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.3em;
 }
 
 #quickSand h4 {
+  font-size: 2.4em;
   text-align: left;
+  line-height: 1.5em;
 }
 
-#Brand .oneRow {
-  margin: 20px;
+#quickSand p {
+  font-size: 1.6em;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.3em;
+}
+
+#cboxes img {
+  width: 280px;
+  height: auto;
+  overflow: auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  #quickSand {
+    padding: 0;
+    border-left: none;
+  }
+  #quickSand p {
+    padding-left: 5%;
+  }
 }
 
 /* ---- Information page ---- */
 
 #paper {
   width: 70%;
+  margin-bottom: 50px;
 }
 
 #Information .oneColumnImage {
   float: left;
-  width: 60%;
+  width: 55%;
 }
 
 #Information .oneColumnText {
   float: right;
-  width: 30%;
+  width: 40%;
+  font-size: 2.4em;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 10%;
+  line-height: 1.5em;
+}
+
+#Information img {
+  margin-top: 6%;
+}
+
+@media (max-width: 800px) {
+  #cboxes img {
+    width: 200px;
+  }
+  #quickSand h4 {
+    font-size: 2em;
+    line-height: 1.3em;
+  }
+  #Information .oneColumnText {
+    float: right;
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 6%;
+    line-height: 1.3em;
+  }
 }
 
 @media (max-width: 600px) {
+  #paper {
+    width: 60%;
+    margin-bottom: 20px;
+  }
   #Information .oneColumnImage {
     width: 80%;
     float: none;
     margin: auto;
+  }
+  #cboxes img {
+    width: 280px;
+  }
+  #quickSand h4 {
+    padding-left: 5%;
+  }
+  #Information #seatingChart {
+    margin-top: 30px;
   }
   #Information .oneColumnText {
     width: 100%;
@@ -495,13 +755,16 @@ a.button {
 
 #Visual img {
   width: 80%;
+  margin-top: 6%;
 }
 
+#Visual #monitor img {
+  width: 50%;
+}
 
 #Visual .twoColumn {
   float: left;
   width: 50%;
-  margin-top: 0;
 }
 
 #Visual .twoColumn img {
@@ -509,9 +772,18 @@ a.button {
   height: auto;
 }
 
+#Visual .twoColumn h4 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
 /* Force following paragraph start at left */
 #cbar2 {
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+#Visual .test {
+  margin-top: 6%;
 }
 
 @media (max-width: 600px) {
@@ -520,26 +792,48 @@ a.button {
     float: none;
     margin: auto;
   }
+  #Visual .twoColumn h4 {
+    font-size: 1.8em;
+  }
+  #Visual .test {
+    margin-top: 10%;
+  }
+  #Visual .test img {
+    margin-bottom: 8%;
+  }
+  #Visual .test h5 {
+    margin-bottom: 6%;
+  }
 }
 
+#invision2 {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
 
 /* ---- Footer ---- */
 
 .footer {
   background: url(../images/footerbkgd.png);
   text-align: center;
+  margin-top: 100px;
 }
 
 .footer h4 {
   margin: 0;
-  padding: 10px;
-  color: yellow;
+  padding: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: #F5DB62;
 }
 
 .footer p {
   margin: 0;
   padding: 10px;
-  color: white;
+  padding: 50px;
+  font-size: 2em;
+  color: #FEFEFF;
 }
 
 .footer .socials ul {
@@ -550,8 +844,8 @@ a.button {
 
 .footer .socials li {
   display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .fa.fa-envelope {
@@ -565,17 +859,47 @@ a.button {
 .fa.fa-github {
   color: white;
 }
+
 
 /* ---- Social icons ---- */
 
 .fa.fa-envelope {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .fa.fa-linkedin-square {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .fa.fa-github {
-  font-size: 24px;
+  font-size: 36px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+  margin-top: 50px;;
+  }
+  .footer h4 {
+    font-size: 2.4em;
+    color: #F5DB62;
+    padding: 36px;
+  }
+  .footer p {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    padding: 36px;
+  }
+  .fa.fa-envelope {
+    font-size: 24px;
+  }
+  .fa.fa-linkedin-square {
+    font-size: 24px;
+  }
+  .fa.fa-github {
+    font-size: 24px;
+  }
+  .footer .socials li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

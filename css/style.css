@@ -28,7 +28,7 @@ body {
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav .navtext, .icon {
   float: right;
   display: inline-block;
   color: #FEFEFF;
@@ -47,7 +47,7 @@ body {
   width: auto;
   margin: 0;
   position: relative;
-  top: 22px;
+  top: 20px;
   padding-left: 3%;
 }
 
@@ -69,17 +69,12 @@ body {
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
   background-color: none;
-  color: #FEFEFF;
+  color: #C3503E;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav a:first-child {
-    margin-left: 35%;
-    margin-right: 35%;
-    display: inline-block;
-  }
-  .topnav a:not(:first-child) {
+  .topnav .navtext {
     display: none;
   }
   .topnav a.icon {
@@ -87,15 +82,16 @@ body {
     display: block;
     margin-right: 20px;
   }
-  .topnav a {
+  .topnav .icon {
     padding: 20px 20px;
+    margin: 0;
+  }
+  .topnav .navtext {
+    padding: 20px 20px 0px 20px;
     margin: 0;
   }
   .topnav img {
     height: 24px;
-    display: inline-block;
-    width: auto;
-    margin: 0;
     position: relative;
     top: 10px;
     padding-left: 3%;
@@ -112,7 +108,7 @@ body {
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .topnav.responsive .navtext, .icon {
     float: none;
     display: block;
     text-align: -webkit-right;
@@ -163,6 +159,7 @@ body {
   #sketch1 {
     float: left;
     height: 250px;
+    margin-top: 90px;
   }
   #intro .button {
     margin: 40px 0 50px 0;
@@ -367,13 +364,28 @@ a.button {
   font-size: 36px;
 }
 
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
   #sketch1 {
     float: left;
     transform: rotate(90deg);
-    height: 500px;
+    height: 400px;
     margin: 0;
+  }
+  #intro #home {
+    font-size: 1.3em;
+  }
+  #intro {
+    margin: 50px 0 0 0;
+    font-size: 1.8em;
+    line-height: 1.6em;
+    padding-left: 5%;
+    padding-right: 5%;
+    letter-spacing: 1px;
+  }
+  #intro .button {
+    margin: 40px 0 0 0;
   }
   .column, #intro {
     width: 100%;
@@ -386,19 +398,7 @@ a.button {
   .projects #case {
     padding-top: 15px;
   }
-  #intro #home {
-    font-size: 1.3em;
-  }
-  #intro {
-    margin: 50px 0 0 0;
-    font-size: 1.8em;
-    line-height: 1.6em;
-    padding: 0 20px 0 20px;
-    letter-spacing: 1px;
-  }
-  #intro .button {
-    margin: 40px 0 0 0;
-  }
+
   .title1 .title2 {
     font-size: 2.6em;
   }

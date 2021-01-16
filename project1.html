@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Case Study | ConnectEd</title>
 
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/project.css">
 
     <!-- Use Font Awesome icons: envelope, linkedin, github -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Quicksand:wght@700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap">
 
     <script src="js/functions.js"></script>
 
@@ -20,16 +23,18 @@
 
         <!-- https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
         <header class="topnav" id="myTopnav">
-            <a href="#"> <img src="images/logo.png"> </a>
-            <a href="#Overview">Overview</a>
-            <a href="#Discovery">Discovery</a>
-            <a href="#Brand">Brand</a>
-            <a href="#Information">Architecture</a>
-            <a href="#Visual">Visual</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="about.html" target="_blank">ABOUT</a>
-            <a href="resume.html" target="_blank">RESUME</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <div id="myLogo">
+              <a href="index.html"><img src="images/logo.png"></a>
+          </div>
+          <a href="#Overview" class="navtext2">Overview</a>
+          <a href="#Discovery" class="navtext2">Discovery</a>
+          <a href="#Brand" class="navtext2">Branding</a>
+          <a href="#Information" class="navtext2">Information Architecture</a>
+          <a href="#Visual" class="navtext2">Visual Design</a>
+          <a href="resume.html" class="navtext" target="_blank">RESUME</a>
+          <a href="about.html" class="navtext">ABOUT</a>
+          <a href="index.html/#projects" class="navtext">PROJECTS</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </header>
 
         <section id="ConnectEd">
@@ -95,11 +100,12 @@
             <section class="oneRow">
                 <h5 class="smallHead">Overview</h5>
                 <h3 class="bigHead">What is ConnectEd?</h3>
-                <p class="text">
+                <p class="text1">
                     Although online education is not a new concept, people have begun to need and use it more recently.
-                    A
-                    robust and agile platform for synchronous instruction can support a smooth transition online for
-                    educators and learners. <br>
+                    A robust and agile platform for synchronous instruction can support a smooth transition online for
+                    educators and learners.
+                </p>
+                <p class="text">
                     ConnectEd is a videoconferencing platform that helps foreign language instructors to deliver content
                     online and easily handle routine logistic and administrative functions of online teaching.
                 </p>
@@ -111,13 +117,9 @@
                     <h3 class="bigHead">The Challenge.</h3>
                     <p class="text">
                         As online education has become particularly salient due to the pandemic, teachers have
-                        encountered
-                        multiple logistical challenges as they transition online. Throughout the discovery phase, I
-                        found
-                        that
-                        online instruction has brought immense challenges to prompt attendance-taking, group work
-                        supervision,
-                        and effective communication.
+                        encountered multiple logistical challenges as they transition online. Throughout the discovery phase, I
+                        found that online instruction has brought immense challenges to prompt attendance-taking, group work
+                        supervision, and effective communication.
                     </p>
                 </section>
                 <section class="oneColumnImage">
@@ -131,11 +133,9 @@
                     <h3 class="bigHead">Consider each task.</h3>
                     <p class="text">
                         Our goal is to fully consider each task and step that language teachers need to fulfill during
-                        online
-                        instruction. The solution's seating chart view with students' attendance status provides more
+                        online instruction. The solution's seating chart view with students' attendance status provides more
                         straightforward and accurate information. The breakout room monitor allows teachers to supervise
-                        group
-                        activities more efficiently, while the improved reminder/notification system ensures smoother
+                        group activities more efficiently, while the improved reminder/notification system ensures smoother
                         communication between all course participants.
                     </p>
                 </section>
@@ -155,56 +155,50 @@
                     I began with a user survey and sent it out to my foreign language educator connections. 24 valid
                     responses were gathered. The results help me learn about when language teachers conduct online
                     instruction via a video conferencing platform, what the most frequently used features are, what
-                    primary
-                    challenges they are facing, and what new features or improvements they want.
+                    primary challenges they are facing, and what new features or improvements they want.
                 </p>
-                <a href="" class="button" target="_blank">VIEW INVISION PROTOTYPE </a>
+                <a href="https://docs.google.com/forms/d/1B9tXUQdexWa6AbXmwtbsfqeUlsTpf2dsqULRpdvdq50/edit?usp=sharing" class="button" target="_blank">VIEW SURVEY QUESTIONS</a>
 
                 <section class="keyDiscoveries">
-                    <h4>Key Discoveries - Stats</h6>
+                    <h6>Key Discoveries - Stats</h6>
                         <ul>
                             <li>
-                                50% of respondents spend more than 10 synchronous hours per week online with all their
+                                <span style="font-weight: 500;">50%</span> of respondents spend more than <span style="font-weight: 500;">10 synchronous hours</span> per week online with all their
                                 classes.
                             </li>
                             <li>
-                                100% of respondents use Zoom for synchronous instruction.
+                                <span style="font-weight: 500;">100%</span> of respondents use <span style="font-weight: 500;">Zoom</span> for synchronous instruction.
                             </li>
                             <li>
-                                67% of respondents use Zoom because it is required by employers.
+                                <span style="font-weight: 500;">67%</span> of respondents use Zoom because it is <span style="font-weight: 500;">required by employers</span>.
                             </li>
                             <li>
-                                58% of respondents call on individual students, compare usage reports with the roster or
-                                rely on
-                                memory to take attendance.
+                                <span style="font-weight: 500;">58%</span> of respondents <span style="font-weight: 500;">call on individual students, compare usage reports with the roster</span> or
+                                <span style="font-weight: 500;">rely on memory</span> to take attendance.
                             </li>
                             <li>
-                                50% of respondents share the screen during synchronous online instruction all the time.
+                                <span style="font-weight: 500;">50%</span> of respondents <span style="font-weight: 500;">share the screen</span> during synchronous online instruction <span style="font-weight: 500;">all the time</span>.
                             </li>
                             <li>
-                                50% of respondents expect to monitor all breakout rooms simultaneously.
+                                <span style="font-weight: 500;">50%</span> of respondents expect to <span style="font-weight: 500;">monitor all breakout rooms simultaneously</span>.
                             </li>
                         </ul>
                 </section>
 
                 <section class="keyDiscoveries">
-                    <h4>Key Discoveries - Input</h6>
+                    <h6>Key Discoveries - Input</h6>
                         <ul>
                             <li>
                                 Almost all respondents would like to monitor all breakout rooms simultaneously.
                             </li>
                             <li>
                                 Most respondents want a seating chart view mode with all meeting participants’
-                                attendance
-                                statuses.
+                                attendance statuses.
                             </li>
                             <li>
                                 Problems such as students ignoring the messages sent to breakout rooms and teachers
-                                being
-                                unable
-                                to review previous notifications regarding who raised their hands, who left the meeting,
-                                etc.
-                                were frequently mentioned.
+                                being unable to review previous notifications regarding who raised their hands, who left the meeting,
+                                etc. were frequently mentioned.
                             </li>
                         </ul>
                 </section>
@@ -212,10 +206,8 @@
                 <hr>
                 <p id="surveyResults">
                     Based on the survey results, it was clear that language teachers need a more efficient and
-                    easy-to-use
-                    online instructional platform that empowers regular instructional and more logistic and
-                    administrative
-                    activities. With these discoveries, I moved forward and collected further feedback through user
+                    easy-to-use online instructional platform that empowers regular instructional and more logistic and
+                    administrative activities. With these discoveries, I moved forward and collected further feedback through user
                     interviews.
                 </p>
                 <hr>
@@ -227,17 +219,16 @@
                 <h3 class="bigHead">Held accountable by users.</h3>
                 <p class="text">
                     I conducted 3 user interviews with more in-depth questions to better understand the user’s
-                    motivations
-                    and frustrations.
+                    motivations and frustrations.
                 </p>
 
                 <section class="threeColumn">
                     <img src="images/BenCrowford.png" alt="sketch">
-                    <h5>Ben Crowford</h5>
+                    <h4>Ben Crowford</h4>
                     <p>Spanish Teacher</p>
                     <p>Age: 25 / Location: Houston, TX / Gender: Male</p>
                     <section>
-                        <h6>Goals</h6>
+                        <h5>Goals</h5>
                         <ol>
                             <li>
                                 To have a better reminder system that assists teacher-student interactions.
@@ -254,7 +245,7 @@
                         </ol>
                     </section>
                     <section>
-                        <h6>Frustrations</h6>
+                        <h5>Frustrations</h5>
                         <ol>
                             <li>
                                 Some of the teacher-student communication features are inefficient or inconvenient.
@@ -267,20 +258,19 @@
                             </li>
                         </ol>
                     </section>
-                    <q>
-                        I will appreciate a more intelligent online instructional platform that humanizes the whole
-                        process
-                        of teaching.
-                    </q>
+                    <blockquote>
+                        "I will appreciate a more intelligent online instructional platform that humanizes the whole
+                        process of teaching."
+                    </blockquote>
                 </section>
 
                 <section class="threeColumn" id="AliceWang">
                     <img src="images/AliceWang.png" alt="sketch">
-                    <h5>Alice Wang</h5>
+                    <h4>Alice Wang</h4>
                     <p>Mandarin Teacher</p>
                     <p> Age: 32 / Location: Sunnyvale, CA / Gender: Female </p>
                     <section>
-                        <h6>Goals</h6>
+                        <h5>Goals</h5>
                         <ol>
                             <li>
                                 Alice likes the “One Click for All” features, such as a button of “Allow all to Record”.
@@ -294,7 +284,7 @@
                         </ol>
                     </section>
                     <section>
-                        <h6>Frustrations</h6>
+                        <h5>Frustrations</h5>
                         <ol>
                             <li>
                                 Some of the frequently-used features are difficult to use.
@@ -308,26 +298,25 @@
                             </li>
                         </ol>
                     </section>
-                    <q>
-                        I need a platform to more effectively supervise and support students’ communication in the group
-                        setting.
-                    </q>
+                    <blockquote>
+                        "I need a platform to more effectively supervise and support students’ communication in the group
+                        setting."
+                    </blockquote>
                 </section>
 
                 <section class="threeColumn">
                     <img src="images/ChelsieLee.png" alt="sketch">
-                    <h5>Chelsie Lee</h5>
+                    <h4>Chelsie Lee</h4>
                     <p>Mandarin Teacher</p>
                     <p> Age: 42 / Location: San Jose, CA / Gender: Female </p>
                     <section>
-                        <h6>Goals</h6>
+                        <h5>Goals</h5>
                         <ol>
                             <li>
                                 Minimum efforts or training to learn how to use the instructional tool.
                             </li>
                             <li>
-                                A tailored plan for private lessons with freedom to choose personal features is
-                                preferred.
+                                A tailored plan for private lessons with freedom to choose personal features is preferred.
                             </li>
                             <li>
                                 One platform that meets her needs with a decent price will make her a loyal user.
@@ -335,16 +324,14 @@
                         </ol>
                     </section>
                     <section>
-                        <h6>Frustrations</h6>
+                        <h5>Frustrations</h5>
                         <ol>
                             <li>
                                 Some of the online instructional platform lacks basic functions while others have a
-                                steep
-                                learning curve;
+                                steep learning curve;
                             </li>
                             <li>
-                                The platforms with necessary features only offer a free plan with very limited meeting
-                                time.
+                                The platforms with necessary features only offer a free plan with very limited meeting time.
                             </li>
                             <li>
                                 The pricey plans with enough meeting time contain too many unnecessary features. She is
@@ -352,11 +339,10 @@
                             </li>
                         </ol>
                     </section>
-                    <q>
-                        A more tailored, flexible and price friendly plan which allows me to personalize my needs will
-                        help
-                        users like me.
-                    </q>
+                    <blockquote>
+                        "A more tailored, flexible and price friendly plan which allows me to personalize my needs will
+                        help users like me."
+                    </blockquote>
                 </section>
 
             </section>
@@ -383,13 +369,10 @@
                                 There is no breakout room monitor.
                             </li>
                             <li>
-                                It provides limited attendance-taking assistance. Hosts have to go through the tedious
-                                usage
-                                report.
+                                It provides limited attendance-taking assistance. Hosts have to go through the tedious usage report.
                             </li>
                             <li>
-                                There is no notification log to follow up. Broadcast message to the breakout room is
-                                easily
+                                There is no notification log to follow up. Broadcast message to the breakout room is easily
                                 overlooked, and it cannot be retrieved for follow-up.
                             </li>
                         </ol>
@@ -420,8 +403,7 @@
                             </li>
                             <li>
                                 Attendance report is only available after the meeting; the information from the
-                                attendance
-                                report is not straightforward.
+                                attendance report is not straightforward.
                             </li>
                             <li>
                                 Users need to install several extensions to access many features.
@@ -436,8 +418,7 @@
                             </li>
                             <li>
                                 Pop-up reminders of who raised hands, who left the meeting, etc. stay on-screen long
-                                than in
-                                Zoom.
+                                than in Zoom.
                             </li>
                             <li>
                                 It takes fewer steps to switch between different breakout rooms compared to Zoom.
@@ -463,20 +444,20 @@
                 </p>
                 <ul>
                     <li class="initialConcept">
-                        <strong>SpeakUp</strong> - To stress the communication focus.
+                        <br> <span style="font-weight: 500;">SpeakUp</span> - To stress the communication focus.
                     </li>
                     <li class="initialConcept">
-                        <strong>LingoMeet</strong> - To emphasize this is a language education platform.
+                        <span style="font-weight: 500;">LingoMeet</span> - To emphasize this is a language education platform.
                     </li>
                     <li class="initialConcept">
-                        <strong>EasyClass</strong> - Learn as in a real classroom with ease and efficiency.
+                        <span style="font-weight: 500;">EasyClass</span> - Learn as in a real classroom with ease and efficiency.
+
                     </li>
                 </ul>
                 <p class="text">
-                    I had other thoughts, but, among them, the concept of “ConnectEd” ultimately won out, as it clearly
+                    <br> I had other thoughts, but, among them, the concept of “<span style="font-weight: 700;">ConnectEd</span>” ultimately won out, as it clearly
                     conveys our goal, which is not only to create a connection between a language teacher and a student,
-                    but
-                    also to help bridge different cultures and embrace diversity.
+                    but also to help bridge different cultures and embrace diversity.
                 </p>
 
             </section>
@@ -486,28 +467,26 @@
                 <h3 class="bigHead">Learn a new language. Encourage a growth mindset.</h3>
                 <p class="text">
                     I wanted the logo to reflect its educational purposes while still being inspiring. To help users
-                    quickly
-                    grasp the core value of ConnectEd, I developed a slogan of “Learn a new language, embrace new
-                    cultures,
-                    encourage a growth mindset, and be a life-long learner!
+                    quickly grasp the core value of ConnectEd, I developed a slogan of “Learn a new language, embrace new
+                    cultures, encourage a growth mindset, and be a life-long learner!
                 </p>
                 <section class="oneRow">
                     <section class="oneColumnText">
                         <ul>
                             <li class="logoConcept">
-                                Some of my initial logo concepts were:
+                                <span style="font-weight: 400;">Some of my initial logo concepts were:</span>
                             </li>
                             <li class="logoConcept">
-                                <strong>A bridge</strong> - To emphasize the connection.
+                                <span style="font-weight: 500;">A bridge</span> - To emphasize the connection.
                             </li>
                             <li class="logoConcept">
-                                <strong>A bulb</strong> - To stress the idea of “enlightenment.”
+                                <span style="font-weight: 500;">A bulb</span> - To stress the idea of “enlightenment.”
                             </li>
                             <li class="logoConcept">
-                                <strong>A screen</strong> - To simply indicate the online learning platform.
+                                <span style="font-weight: 500;">A screen</span> - To simply indicate the online learning platform.
                             </li>
                             <li class="logoConcept">
-                                <strong>Letters infusing the letters “C” and “E”</strong> - Abbreviation of ConnectEd.
+                                <span style="font-weight: 500;">Letters infusing the letters “C” and “E”</span> - Abbreviation of ConnectEd.
                             </li>
                         </ul>
                     </section>
@@ -520,8 +499,7 @@
                     The tree-like logo eventually won over all the other options for its conciseness and
                     straightforwardness. Two letters of “E” are embedded within the tree to indicate the nature of our
                     product - an educational platform. Also, we created a tree symbol as it represents personal growth
-                    and
-                    spiritual nourishment, hearkening to its educational purposes.
+                    and spiritual nourishment, hearkening to its educational purposes.
                 </p>
                 <img src="images/logo1.png" alt="sketch" id="treeLogo">
 
@@ -531,51 +509,32 @@
                 <section class="twoColumn" id="colors">
                     <h4>Color</h4>
                     <p> We want to use green as the primary color to align with the tree symbol. Green represents
-                        personal
-                        growth and the study indicated that it sparks creativity, which will benefit both language
+                        personal growth and the study indicated that it sparks creativity, which will benefit both language
                         instructors and learners. </p>
                     <p> Light green can work well as the primary background color. Dark green is a versatile color and
-                        can
-                        be used for logo, headline color, and more. </p>
+                        can be used for logo, headline color, and more. </p>
 
                     <section id="cboxes">
-                        <section class="cbox-with-label">
-                            <div class="cbox-c1"></div>
-                            <h6>#DAEDED</h6>
-                        </section>
-                        <section class="cbox-with-label">
-                            <div class="cbox-c2"></div>
-                            <h6>#64C2B9</h6>
-                        </section>
-                        <section class="cbox-with-label">
-                            <div class="cbox-c3"></div>
-                            <h6>#2E9189</h6>
-                        </section>
-                        <section class="cbox-with-label">
-                            <div class="cbox-c4"></div>
-                            <h6>#1A3C3E</h6>
-                        </section>
+                        <img src="images/colorbox.png" alt="sketch">
                     </section>
                 </section>
 
                 <section class="twoColumn" id="quickSand">
                     <h4> Quicksand (H1, H2, H3, H4) </h4>
                     <p> Quicksand was chosen as the primary brand typeface. It conveys a feeling of new, being
-                        approachable,
-                        and openness, which matches the values of our product - connecting with people, being open to
-                        new
-                        cultures, and embracing diversity.
+                        approachable, and openness, which matches the values of our product - connecting with people, being open to
+                        new cultures, and embracing diversity.
                     </p>
 
-                    <h4> Quicksand Bold </h4>
-                    <h4> Quicksand Medium </h4>
-                    <h4> Quicksand Regular </h4>
+                    <h4> <span style="font-weight:700;">Quicksand Bold</span> </h4>
+                    <h4> <span style="font-weight:500;">Quicksand Medium</span> </h4>
+                    <h4> <span style="font-weight:400;">Quicksand Regular</span> </h4>
 
                     <h4>
-                        abcdefghijklmnopqrstuvwxyz
+                        <span style="font-weight:300;">abcdefghijklmnopqrstuvwxyz</span>
                     </h4>
                     <h4>
-                        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                        <span style="font-weight:700;">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
                     </h4>
                 </section>
 
@@ -591,10 +550,8 @@
                 <h3 class="bigHead">Define user's main goals</h3>
                 <p class="text">
                     Combining the research findings and the solutions to tackle users’ challenges, I created
-                    high-priority
-                    user stories and then converted them into user flows. Below, you will see how users would interact
-                    with
-                    the product to achieve their goals.
+                    high-priority user stories and then converted them into user flows. Below, you will see how users would interact
+                    with the product to achieve their goals.
                 </p>
                 <img src="images/flow.png" alt="sketch">
             </section>
@@ -609,10 +566,8 @@
                 <img src="images/paper.png" alt="sketch" id="paper">
                 <p class="text">
                     I explained my work to a couple of colleagues after our bi-weekly department meetings on Zoom. The
-                    ideas
-                    and solutions stirred up some great conversations about how to better display the breakout room
-                    monitor
-                    in a more convenient way without taking too many steps or clicks. I moved forward with this valuable
+                    ideas and solutions stirred up some great conversations about how to better display the breakout room
+                    monitor in a more convenient way without taking too many steps or clicks. I moved forward with this valuable
                     feedback and put them into action on a more refined wireframe using Figma.
                 </p>
             </section>
@@ -632,7 +587,7 @@
             <section class="oneRow">
                 <h5 class="smallHead">User Testing</h5>
                 <h3 class="bigHead">Inspired by users.</h3>
-                <p class="text">
+                <p class="text1">
                     I ran the usability tests with 3 potential users. Self-reported claims were used to record
                     participants’ speech and actions. For this test, I wanted to test the interaction flow, the learning
                     curve, and the clarity of the information. Through the test, I learned the following areas could be
@@ -643,25 +598,19 @@
                     prompt attendance, supervising breakout room activities simultaneously, and enjoying a better
                     reminder/notification system. All of them gave me positive feedback, and I felt confident to
                     convert these wireframes into hi-fi prototypes. </p>
-            </section>
-
-            <section class="oneRow">
                 <section class="oneColumnImage">
                     <img src="images/AccountDashboard.png" alt="sketch">
                 </section>
                 <section class="oneColumnText">
-                    <p> <strong>A</strong>: Showing time remaining for the upcoming non-recurring meetings will be
-                        more helpful for users. </p>
-                    <p> <strong>B</strong>: There should be a “Start” button to reduce unnecessary clicking. </p>
+                    <p> <span style="font-weight: 400;">A</span>: Showing time remaining for the upcoming non-recurring meetings will be
+                            more helpful for users. </p> <br>
+                    <p> <span style="font-weight: 400;">B</span>: There should be a “Start” button to reduce unnecessary clicking. </p>
                 </section>
-            </section>
-
-            <section class="oneRow">
                 <section class="oneColumnImage">
-                    <img src="images/SeatingChartView.png" alt="sketch">
+                    <img src="images/SeatingChartView.png" id="seatingChart" alt="sketch">
                 </section>
                 <section class="oneColumnText">
-                    <p> <strong>A & B</strong>:
+                    <p> <span style="font-weight: 400;">A & B</span>:
                         Two of the three participants mentioned to me that the color red is normally used for a more
                         severe situation. In this case, I should rethink the color use for “Tardy” and “Absent”
                         participants. </p>
@@ -728,7 +677,7 @@
                 <img src="images/SeatingChartView2.png" alt="sketch">
             </section>
 
-            <section class="oneRow">
+            <section class="oneRow" id="monitor">
                 <h5 class="smallHead">Split Room Monitor</h5>
                 <h3 class="bigHead">Monitor group activities with ease.</h3>
                 <p class="text">
@@ -748,41 +697,36 @@
                     their input, I was able to understand which design they favored and why.
                 </p>
 
-                <section class="oneRow">
-                    <h5 class="smallHead">Preference Test #1</h5>
-                    <section class="twoColumn">
-                        <h4>A</h4>
-                        <img src="images/loginv1.png" alt="sketch">
-                    </section>
-                    <section class="twoColumn">
-                        <h4>B</h4>
-                        <img src="images/loginv2.png" alt="sketch">
-                    </section>
-                    <p class="text"> In the test, I wanted to find out which sign up flow was more natural and
-                        efficient. Most of the
-                        participants preferred a lighter background. Also, most of them preferred moving “Don’t have an
+                <section class="test">
+                  <h5 class="smallHead">Preference Test #1</h5>
+                  <section class="twoColumn">
+                      <h4>A</h4>
+                      <img src="images/loginv1.png" alt="sketch">
+                  </section>
+                  <section class="twoColumn">
+                      <h4>B</h4>
+                      <img src="images/loginv2.png" alt="sketch">
+                  </section>
+                  <p class="text"> In the test, I wanted to find out which sign up flow was more natural and
+                        efficient. Most of the participants preferred a lighter background. Also, most of them preferred moving “Don’t have an
                         account? Create Account” under the tagline as they were related info and should be put closer to
                         each other. As a result, 95% of the participants chose B. </p>
                 </section>
 
-                <section class="oneRow">
-                    <h5 class="smallHead">Preference Test #2</h5>
-                    <section class="twoColumn">
-                        <h4>A</h4>
-                        <img src="images/controlbarv1.png" alt="sketch">
-                    </section>
-                    <section class="twoColumn">
-                        <h4>B</h4>
-                        <img src="images/controlbarv2.png" alt="sketch" id="cbar2">
-                    </section>
-                    <p class="text"> I created 2 versions of the meeting control bar and wanted to find out which one
-                        was more
-                        visually
-                        pleasing and functionable. One hundred percent of the participants chose A, as A displayed the
-                        buttons in a more prominent way and the subtleness made the design more attractive. </p>
+                <section class="test">
+                  <h5 class="smallHead">Preference Test #2</h5>
+                  <section class="twoColumn">
+                      <h4>A</h4>
+                      <img src="images/controlbarv1.png" alt="sketch">
+                  </section>
+                  <section class="twoColumn">
+                      <h4>B</h4>
+                      <img src="images/controlbarv2.png" alt="sketch" id="cbar2">
+                  </section>
+                  <p class="text"> I created 2 versions of the meeting control bar and wanted to find out which one
+                            was more visually pleasing and functionable. One hundred percent of the participants chose A, as A displayed the
+                            buttons in a more prominent way and the subtleness made the design more attractive. </p>
                 </section>
-
-
             </section>
 
             <section class="oneRow">
@@ -790,13 +734,11 @@
                 <h3 class="bigHead">Further refine hi-fidelity prototype.</h3>
                 <p class="text">
                     I ran the usability tests with 3 different potential users. For this test, I wanted to find out if
-                    there
-                    were some confusing areas that were not noticed before. Below are the changes that I made based on
-                    the
-                    feedback patterns.
+                    there were some confusing areas that were not noticed before. Below are the changes that I made based on
+                    the feedback patterns.
                 </p>
 
-                <section class="oneRow">
+                <section class="test">
                     <h5 class="smallHead">Feedback Pattern #1</h5>
                     <section class="twoColumn">
                         <h4>Before</h4>
@@ -807,11 +749,10 @@
                         <img src="images/LandingPageAfter.png" alt="sketch">
                     </section>
                     <p class="text"> I switched the primary and secondary tagline in the original landing page. After
-                        the change, it
-                        conveys a clearer message to the audience of what type of service ConnectEd provides. </p>
+                        the change, it conveys a clearer message to the audience of what type of service ConnectEd provides. </p>
                 </section>
 
-                <section class="oneRow">
+                <section class="test">
                     <h5 class="smallHead">Feedback Pattern #2</h5>
                     <section class="twoColumn">
                         <h4>Before</h4>
@@ -825,11 +766,6 @@
                         hosts to constantly look down to the bottom right corner to access the notification log. The
                         combination of both will be the double assurance for an efficient reminder/notification system.
                     </p>
-
-                    <p class="text"> I also asked participants’ opinions if the design could help them achieve the 3
-                        goals: taking prompt attendance, supervising breakout room activities simultaneously, and
-                        enjoying a better reminder/notification system. All of them gave me positive feedback, and I
-                        felt confident to convert these wireframes into hi-fi prototypes. </p>
                 </section>
 
             </section>
@@ -837,17 +773,17 @@
         </section>
 
         <section class="oneRow">
-            <a href="https://invis.io/ECZOHJQDM7Z" class="button" target="_blank">VIEW INVISION PROTOTYPE </a>
+            <a href="https://invis.io/ECZOHJQDM7Z" class="button" id="invision2" target="_blank">VIEW INVISION PROTOTYPE </a>
             <h5 class="smallHead">Conclusion</h5>
             <h3 class="bigHead">What I learned. What I will do next.</h3>
-            <p class="text">
+            <p class="text1">
                 I have been questioning myself throughout the project: there are so many good flows that Zoom, Google
                 Meet, and other video conferencing platforms have designed. Can I borrow the good ideas, or should I
                 re-design everything? I made the decision to take reducing the learning curve as the priority, learned
                 from the mainstream products, and put more energy on solving the specific problems users identified.
                 User testing proved I made the right choice.
             </p>
-            <p class="text">
+            <p class="text1">
                 Also, throughout the project, I realized how important the interactions with potential users are during
                 each stage of the design process to ensure the product is based on user-centered design. I collected
                 valuable and crucial feedback from different testers.
