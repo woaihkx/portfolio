@@ -814,6 +814,7 @@ a.button {
   }
   #Visual .test {
     margin-top: 10%;
+    padding-right: 0;
   }
   #Visual .test img {
     margin-bottom: 8%;
