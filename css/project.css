@@ -64,7 +64,7 @@ ul {
   text-decoration: none;
   font-size: 16px;
   vertical-align: middle;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .topnav img {
@@ -123,26 +123,34 @@ ul {
     float: right;
     display: block;
     margin-right: 20px;
+    font-size: 24px;
   }
   .topnav .icon {
     padding: 20px 20px;
     margin: 0;
   }
   .topnav .navtext {
-    padding: 20px 20px 0 20px;
+    padding: 20px 25px 0 20px;
     margin: 0;
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0;
   }
+  .topnav #projects {
+    padding-bottom: 20px;
+  }
+  .topnav #overview {
+    padding-top: 30px;
+  }
   .topnav .navtext2 {
-    padding: 20px 20px 0 20px;
+    padding: 20px 25px 0 20px;
     margin: 0;
+    font-weight: 300;
   }
   .topnav img {
     height: 24px;
     position: relative;
-    top: 17px;
+    top: 20px;
     margin-left: 3%;
   }
   .topnav.responsive {
@@ -161,7 +169,7 @@ ul {
   .topnav.responsive img {
     height: 24px;
     position: relative;
-    top: -13px;
+    top: -10px;
     margin-left: 3%;
   }
 }

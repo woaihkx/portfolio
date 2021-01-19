@@ -81,6 +81,7 @@ body {
     float: right;
     display: block;
     margin-right: 20px;
+    font-size: 24px;
   }
   .topnav .icon {
     padding: 20px 20px;
@@ -90,10 +91,13 @@ body {
     padding: 20px 20px 0px 20px;
     margin: 0;
   }
+  .topnav #resume {
+    padding-top: 30px;
+  }
   .topnav img {
     height: 24px;
     position: relative;
-    top: 10px;
+    top: 15px;
     padding-left: 3%;
   }
 }
@@ -546,5 +550,6 @@ a.button {
   }
   .aboutIntro p {
     font-size: 1.6em;
+    font-weight: 300;
   }
 }
