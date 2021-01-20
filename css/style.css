@@ -69,7 +69,7 @@ body {
 /* Add a dark background on topnav links and the dropdown button on hover */
 .topnav a:hover {
   background-color: none;
-  color: #C3503E;
+  color: #F5DB62;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -124,7 +124,7 @@ body {
   margin-left: 10%;
   margin-top: 80px;
   width: 60%;
-  font-size: 2.4em;
+  font-size: 2.6em;
   line-height: 1.5em;
   letter-spacing: 0.5px;
 }
@@ -139,12 +139,14 @@ body {
 
 #intro a {
   color: #FEFEFF;
+  font-size: 22px;;
   letter-spacing: 2px;
+  padding: 8px 24px;
 }
 
 #sketch1 {
   float: right;
-  height: 500px;
+  height: 480px;
   margin-right: 50px;
   margin-top: 50px;
 }
