@@ -108,7 +108,7 @@ ul {
 }
 
 .sticky + #ConnectEd {
-  padding-top: 70px;
+  padding-top: 74px;
 }
 
 /* adjust topnav */
@@ -194,7 +194,7 @@ ul {
     width: 100%;
   }
   .sticky + #ConnectEd {
-    padding-top: 60px;
+    padding-top: 63px;
   }
 }
 
@@ -907,11 +907,11 @@ a.button {
 /* ---- Social icons ---- */
 
 .fa.fa-envelope {
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .fa.fa-linkedin-square {
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .fa.fa-github {
