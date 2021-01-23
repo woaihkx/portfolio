@@ -140,14 +140,14 @@ body {
 .home2 {
   margin-bottom: 25px;
   line-height: 1.5em;
-  font-size: 2.6em;
+  font-size: 3em;
 }
 .home3 {
   line-height: 1.5em;
   font-size: 2.6em;
 }
 
-.arrow a { color: white; text-decoration: none; }
+.arrow a { color: #FEFEFF; text-decoration: none; }
 
 .arrow {
   text-align: center;
@@ -175,18 +175,19 @@ body {
   #intro {
     margin-top: 50px;
     line-height: 1.6em;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
     letter-spacing: 1px;
   }
   .home1 {
     font-size: 2.6em;
   }
   .home2 {
-    font-size: 2.2em;
+    font-size: 2.4em;
   }
   .home3 {
     font-size: 2.2em;
+    margin-bottom: 50px;
   }
 }
 
@@ -370,12 +371,17 @@ a.button {
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
+  .home1 {
+    background: radial-gradient(circle farthest-side, #fff, #CFCFCF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .column {
     width: 100%;
     float: none;
   }
   .projects .row {
-    margin: 30px 0 30px 0;
+    margin: 100px 0 50px 0;
     border-radius: 0;
   }
   .projects #case {
