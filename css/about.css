@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: #242227;
-  color: #FEFEFF;
+  background-color: #FEFEFF;
+  color: #242227;
   font-family: 'Yantramanav', sans-serif;
   font-size: 10px;
-  font-weight:400;
+  font-weight: 400;
   margin: 0;
   overflow: auto;
   padding: 0;
@@ -120,52 +120,44 @@ body {
   }
 }
 
-#intro {
-  float: none;
-  text-align: center;
-  margin-top: 100px;
-  width: 100%;
-  letter-spacing: 0.5px;
-  padding-left: 10%;
-  padding-right: 10%;
+/* ---- about html ---- */
+
+/* Create two equal columns that floats next to each other */
+.aboutColumn {
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
 }
 
-.home1 {
-  font-size: 3.6em;
+.aboutColumn img {
+  width: 50%;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: 15%;
+  margin-top: 10%;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.aboutRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.aboutColumn p {
   font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  font-weight: 600;
   letter-spacing: 2px;
-  line-height: 1.6em;
-  margin-bottom: 30px;
-  background: radial-gradient(circle farthest-side, #FEFEFF, #666666);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-top: 28%;
+  line-height: 1.2em;
   animation: fadeIn ease 6s;
   -webkit-animation: fadeIn ease 6s;
   -moz-animation: fadeIn ease 6s;
   -o-animation: fadeIn ease 6s;
   -ms-animation: fadeIn ease 6s;
-}
-
-.home2 {
-  margin-bottom: 25px;
-  line-height: 1.5em;
-  font-size: 3em;
-  animation: fadeIn ease 8s;
-  -webkit-animation: fadeIn ease 8s;
-  -moz-animation: fadeIn ease 8s;
-  -o-animation: fadeIn ease 8s;
-  -ms-animation: fadeIn ease 8s;
-}
-
-.home3 {
-  line-height: 1.5em;
-  font-size: 2.6em;
-  margin-bottom: 80px;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
 }
 
 @keyframes fadeIn {
@@ -193,139 +185,42 @@ body {
   100% {opacity:1;}
 }
 
-.arrow a {
-  color: #FEFEFF;
-  text-decoration: none;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
+.aboutRow, .aboutIntro {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.arrow {
-  text-align: center;
-  left: 50%;
+.aboutIntro {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.bounce {
-  -moz-animation: bounce 5s infinite;
-  -webkit-animation: bounce 5s infinite;
-  animation: bounce 5s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-@media screen and (max-width: 754px) {
-  #intro {
-    margin-top: 50px;
-    line-height: 1.6em;
-    padding-left: 8%;
-    padding-right: 8%;
-    letter-spacing: 1px;
-  }
-  .home1 {
-    font-size: 2.6em;
-  }
-  .home2 {
-    font-size: 2.4em;
-  }
-  .home3 {
-    font-size: 2.2em;
-    margin-bottom: 50px;
-  }
-}
-
-.projects .row {
-  margin: 50px 80px 50px 80px;
-  background-color: #575964;
-  border-radius: 5px;
-}
-
-.title1 {
-  font-size: 4em;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  color: #2E9189;
-  letter-spacing: 2px;
-  padding-bottom: 30px;
-}
-
-.title2 {
-  font-family: 'Avenir', sans-serif;
-  src: url('fonts/AvenirLTStd-Black.eot'),
-       url('fonts/AvenirLTStd-Black.eot?#iefix') format('embedded-opentype'),
-       url('fonts/AvenirLTStd-Black.woff2') format('woff2'),
-       url('fonts/AvenirLTStd-Black.woff') format('woff'),
-       url('fonts/AvenirLTStd-Black.ttf') format('truetype'),
-       url('fonts/AvenirLTStd-Black.svg#AvenirLTStd-Black') format('svg');
-  font-weight: 700;
-  font-size: 4em;
-  color: #3096F3;
-  letter-spacing: 3px;
-  padding-bottom: 30px;
-}
-
-.content {
-  font-size: 2em;
+.aboutIntro h3 {
+  color: #C3503E;
+  font-size: 3em;
+  font-weight: 500;
   letter-spacing: 0.5px;
   line-height: 1.2em;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.projects .column {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+.aboutIntro p {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.5em;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 45%;
-  height: 100%;
-  margin-left: 20px;
-}
-
-.column img {
-  width: 80%;
-  vertical-align: middle;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.aboutIntro a {
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 a.button {
   background-color: #242227;
-  border: 3px solid #FEFEFF;
-  color: #FEFEFF;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 50px 0 200px 0;
-  cursor: pointer;
-}
-
-#viewProject1 {
-  background-color: #2E9189;
-  border: none;
+  border-radius: 30px;
   color: #FEFEFF;
   padding: 14px 28px;
   text-align: center;
@@ -333,24 +228,47 @@ a.button {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
+  margin: 20px 0 50px 0;
   cursor: pointer;
-  border-radius: 5px;
-  letter-spacing: 0.5px;
 }
 
-#viewProject2 {
-  background-color: #3096F3;
-  border: none;
-  color: #FEFEFF;
-  padding: 14px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 5px;
-  letter-spacing: 0.5px;
+.aboutIntro a:hover {
+  background-color: #F5DB62;
+  color: #242227;
+}
+
+@media (max-width: 768px) {
+  .column img {
+    padding-top: 50px;
+  }
+  .aboutRow .aboutColumn p {
+    font-size: 3.6em;
+    margin-top: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutColumn {
+    width: 100%;
+    float: none;
+  }
+  .aboutRow .aboutColumn p {
+    font-size: 3em;
+    margin-top: 15%;
+  }
+  .aboutColumn img {
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+  }
+  .aboutIntro h3 {
+    color: #C3503E;
+    font-size: 2.6em;
+  }
+  .aboutIntro p {
+    font-size: 1.6em;
+    font-weight: 300;
+  }
 }
 
 /* ---- Footer ---- */
@@ -375,6 +293,7 @@ a.button {
   padding: 10px;
   padding: 50px;
   font-size: 2em;
+  color: #FEFEFF;
 }
 
 .footer .socials ul {
@@ -416,47 +335,8 @@ a.button {
   font-size: 36px;
 }
 
-@media screen and (max-width: 768px) {
-  .column img {
-    padding-top: 30px;
-  }
-  .projects .row {
-    margin: 50px 50px 50px 50px;
-  }
-}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .home1 {
-    background: radial-gradient(circle farthest-side, #fff, #CFCFCF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .column {
-    width: 100%;
-    float: none;
-  }
-  .projects .row {
-    margin: 100px 0 50px 0;
-    border-radius: 0;
-  }
-  .projects #case {
-    padding-top: 15px;
-  }
-
-  .title1 .title2 {
-    font-size: 2.6em;
-  }
-  .content {
-    font-size: 2em;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  #viewProject1 #viewProject2 {
-    font-size: 1.8em;
-  }
-  .column {
-    margin: 0px;
-  }
   .footer {
     margin-top: 50px;;
   }
