@@ -499,7 +499,6 @@ a.button {
 .footer {
   background: url(../images/footerbkgd.png);
   text-align: center;
-  margin-top: 100px;
 }
 
 .footer h4 {
@@ -559,9 +558,6 @@ a.button {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .footer {
-    margin-top: 50px;;
-  }
   .footer h4 {
     font-size: 2.4em;
     color: #F5DB62;
