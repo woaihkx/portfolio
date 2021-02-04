@@ -24,6 +24,13 @@ img {
   width: 100%;
 }
 
+video {
+  object-fit: contain;
+  width: 70%;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -390,7 +397,7 @@ a.button {
 .bigHead {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 46px;
   line-height: 1.3em;
   text-align: center;
   letter-spacing: 0.05em;
@@ -635,8 +642,14 @@ a.button {
 }
 
 #treeLogo {
-  width: 40%;
+  width: 50%;
+  margin-top: 10%;
+}
+
+#otherLogo {
+  width: 50%;
   margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 #Brand .twoColumn {
